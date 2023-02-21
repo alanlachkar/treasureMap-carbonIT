@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 // Utils imports
 import { AdventurerInterface, LocationInterface, TreasureInterface } from '../../types';
 import { ECardinalPoint } from '../../utils/enums/enums';
+import { Table } from '../Table/Table';
 
 /**
  * Interface for TreasureMap component
@@ -37,7 +38,18 @@ export const TreasureMap = (props: TreasureMapProps): JSX.Element => {
     }
   }, [fileContent]);
 
-  return <></>;
+  return (
+    <>
+      {mapSize && (
+        <>
+          <p>The map size is :</p>
+          <p>- {mapSize.x} horizontal;</p>
+          <p>- {mapSize.y} vertical</p>
+        </>
+      )}
+      <Table mapSize={mapSize} />
+    </>
+  );
 };
 
 /**
