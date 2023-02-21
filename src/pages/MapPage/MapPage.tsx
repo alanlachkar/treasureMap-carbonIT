@@ -52,7 +52,6 @@ const readFile = (
 
       if (file?.type.match(textFile)) {
         reader.onload = () => {
-          console.log('🚀 ~ file: MapPage.tsx:58 ~ reader:', reader);
           onChangeFile(reader.result as string);
         };
       } else {

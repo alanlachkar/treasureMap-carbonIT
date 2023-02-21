@@ -1,4 +1,4 @@
-import { ECardinalPoint } from 'src/utils/enums/enums';
+import { ECardinalPoint, ETypeOfCase } from 'src/utils/enums/enums';
 
 /**
  * Interface about location
@@ -11,23 +11,18 @@ interface LocationInterface {
 }
 
 /**
- * Interface about treasure
- * numberOfTreasure - number of the treasure in the location
- */
-interface TreasureInterface extends LocationInterface {
-  numberOfTreasure: number;
-}
-
-/**
  * Interface about adventurer
  * name     - Name of the adventurer
  * oriented - Orientation at the begining of the scenario
  * path     - The path the adventurer will take during the scenario
+ * typeOfCase - type of the case
  */
-interface AdventurerInterface extends TreasureInterface {
-  name: string;
-  oriented: ECardinalPoint;
-  path: string;
+interface CaseInterface extends LocationInterface {
+  name?: string;
+  oriented?: ECardinalPoint;
+  numberOfTreasure?: number;
+  path?: string;
+  typeOfCase: ETypeOfCase;
 }
 
-export { AdventurerInterface, LocationInterface, TreasureInterface };
+export { CaseInterface, LocationInterface };

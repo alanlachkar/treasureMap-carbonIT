@@ -7,3 +7,13 @@ export enum ECardinalPoint {
   EAST = 'E',
   WEST = 'W'
 }
+
+/**
+ * Enumerate for specify the type of the case
+ */
+export enum ETypeOfCase {
+  MOUTAIN = 'M',
+  ADVENTURER = 'A',
+  TREASURE = 'T',
+  PLAIN = 'P'
+}
