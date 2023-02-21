@@ -15,12 +15,13 @@ const MapPage = (): JSX.Element => {
   return (
     <div>
       <p>Hello Treasure Map !</p>
-
       <input
         type="file"
         onChange={(event: React.ChangeEvent<HTMLInputElement>) =>
           readFile(event, onChangeFile)
         }
+        accept=".txt"
+        multiple={false}
       />
       <p>{fileContent}</p>
       <TreasureMap fileContent={fileContent} />
@@ -41,18 +42,22 @@ const readFile = (
 ): void => {
   let files: FileList | null = event?.target?.files;
   let reader = new FileReader();
-  // Get only one file even if multiple file are selected
-  if (files !== null && files[0] !== null) {
-    reader.readAsText(files[0]);
+  // Get only one file, specify in <input> properties
+  if (files !== null) {
+    const file = files[0];
+    if (file !== null) {
+      reader.readAsText(file);
 
-    let textFile = /text.*/;
+      let textFile = /text.*/;
 
-    if (files[0]?.type.match(textFile)) {
-      reader.onload = () => {
-        onChangeFile(reader.result as string);
-      };
-    } else {
-      alert("It doesn't seem to be a text file we search!");
+      if (file?.type.match(textFile)) {
+        reader.onload = () => {
+          console.log('🚀 ~ file: MapPage.tsx:58 ~ reader:', reader);
+          onChangeFile(reader.result as string);
+        };
+      } else {
+        alert("It doesn't seem to be a text file we search!");
+      }
     }
   }
 };
