@@ -94,7 +94,7 @@ const getFileInformation = (
 /**
  * Add an adventurer to the state
  * @param elementsLine Adventurer informations
- * @param setAdventurers Function used to set location of each adventurer in the file
+ * @param setMapContent Function used to set location of each adventurer in the file
  */
 const addAdventurer = (
   elementsLine: string[],
@@ -118,7 +118,7 @@ const addAdventurer = (
 /**
  * Add a treasure to the state
  * @param elementsLine Treasure informations
- * @param setTreasures Function used to set location of each treasure in the file
+ * @param setMapContent Function used to set location of each treasure in the file
  */
 const addTreasure = (
   elementsLine: string[],
@@ -139,7 +139,7 @@ const addTreasure = (
 /**
  * Add a mountain to the state
  * @param elementsLine Location of the mountain
- * @param setMountainsLocation Function used to set location of each mountain in the file
+ * @param setMapContent Function used to set location of each mountain in the file
  */
 const addMountainLocation = (
   elementsLine: string[],
