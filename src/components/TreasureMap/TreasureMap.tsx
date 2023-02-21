@@ -41,7 +41,7 @@ export const TreasureMap = (props: TreasureMapProps): JSX.Element => {
 };
 
 /**
- *
+ * Get the information on the file and dispatch it according the first letter of each line
  * @param fileContent Content of the selected file
  * @param setMapSize Function used to update the size of the map
  * @param setMountainsLocation Function used to set location of each moutain in the file
