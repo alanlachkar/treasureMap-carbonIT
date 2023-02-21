@@ -1,9 +1,10 @@
 // React imports
 import { useState, useEffect } from 'react';
+// Component imports
+import { Table } from '../Table/Table';
 // Utils imports
 import { AdventurerInterface, LocationInterface, TreasureInterface } from '../../types';
 import { ECardinalPoint } from '../../utils/enums/enums';
-import { Table } from '../Table/Table';
 
 /**
  * Interface for TreasureMap component
