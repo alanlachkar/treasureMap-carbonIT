@@ -5,9 +5,9 @@ The exercice was given to me by Carbon-IT.
 
 Main goals:
 
-- Read file which contain details (map size, location and number of treasure, character and location of mountains);
-- Manage the characters' movement;
-- Provides a record of the number of treasures each character has;
+- Read file which contain details (map size, location and number of treasure, adventurer and location of mountains);
+- Manage the adventurer' movement;
+- Provides a record of the number of treasures each adventurer has;
 
 ## Introduction and project configuration
 
