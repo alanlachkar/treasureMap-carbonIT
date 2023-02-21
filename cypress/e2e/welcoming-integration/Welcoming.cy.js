@@ -11,23 +11,14 @@ describe('Welcoming flow', () => {
   });
 
   it("Check tab's title", () => {
-    cy.title().should('include', 'Query React App template');
+    cy.title().should('include', 'Treasure Map App');
   });
 
-  it('Intercept the jsonplaceholder request', () => {
-    cy.intercept('GET', 'https://jsonplaceholder.typicode.com/posts').as('getAllPosts');
-    cy.visit('/');
-
-    cy.wait('@getAllPosts').then(({ response }) => {
-      expect(response.statusCode).to.eq(200);
-    });
-  });
-
-  it('Check what contain in the first post', () => {
-    cy.get('#postId1').should('be.visible');
-    cy.get('[data-testid="bodyId1"]').should(
-      'have.text',
-      'quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto'
-    );
-  });
+  // it('Check what contain in the first post', () => {
+  //   cy.get('#postId1').should('be.visible');
+  //   cy.get('[data-testid="bodyId1"]').should(
+  //     'have.text',
+  //     'quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto'
+  //   );
+  // });
 });

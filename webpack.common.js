@@ -47,8 +47,8 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'Query React App template',
-      favicon: './src/assets/react.svg',
+      title: 'Treasure Map App',
+      favicon: './src/assets/treasure.svg',
       template: path.resolve('./public/template.html'),
       filename: './index.html' // Removing this line will have the same behavior
     })

@@ -1,7 +1,7 @@
 {
-  "name": "crqt-skeleton",
-  "version": "0.1.0",
-  "description": "React query template is a template use to create a react app from scratch without CRA containing react-query library for requests",
+  "name": "treasure-map_carbon-it",
+  "version": "0.0.1",
+  "description": "Pratice exercice from Carbon IT company",
   "main": "index.tsx",
   "keywords": [
     "react",
@@ -11,7 +11,7 @@
   ],
   "author": "alan",
   "license": "MIT",
-  "homepage": "https://github.com/alanlachkar/queryReactTemplate#readme",
+  "homepage": "https://github.com/alanlachkar/treasureMap-carbonIT#readme",
   "devDependencies": {
     "@babel/core": "^7.21.0",
     "@babel/plugin-proposal-class-properties": "^7.17.12",

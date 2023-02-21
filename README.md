@@ -1,15 +1,17 @@
-# [Query React template](https://github.com/alanlachkar/queryReactTemplate/)
+# [Treasure Map App](https://github.com/alanlachkar/treasureMap-carbonIT/)
 
-React template is a template use to create a react app from scratch without CRA.
+The goal of this project is to show my technical skills with a pratice exercice.
+The exercice was given to me by Carbon-IT.
 
-- **WHY ANOTHER TEMPLATE :** Simpler frontend project, reusable tools/components and easier to debug.
-- **Job interview:** Sample to use to create a job interview frontend.
-- **Private project:** Build an professionnal app with right structure and configuration.
-- **POC/MVP:** Design to create a fast and reusable POC/MVP to learn/demonstrate during a meeting.
+Main goals:
+
+- Read file which contain details (map size, location and number of treasure, character and location of mountains);
+- Manage the characters' movement;
+- Provides a record of the number of treasures each character has;
 
 ## Introduction and project configuration
 
-Query React Template is designed for minimum configuration (using react-query and react-router libraries) and **you can use all you need**:
+Query React Template is designed for minimum configuration and **you can use all you need**:
 
 - React API 18 with Hooks [React hooks](https://fr.reactjs.org/docs/hooks-intro.html).
 - Typescript [TS](https://www.typescriptlang.org/).
@@ -23,33 +25,24 @@ Query React Template is designed for minimum configuration (using react-query an
 - Jest [Jest](https://jestjs.io/fr/) unit test
 - Cypress [Cypress](https://www.cypress.io/) end to end testing (features workflow)
 - Mochawesome report cypress HTML and NYC coverage report
-- Axios for request HTTP handling data
-- dotenv to configure .env
 
-You can use this minimun configuration to start a clean project, test it and improve it
-
-## Pre installation (toolings)
-
-VS Code extensions used to develop faster.
+## Extra configuration
 
 - Prettier
 
-(Optional) You can configure the prettier path of the project as your default prettier configuration or keep your own.
-
-But if you run the .bat script on [Git hooks](#git-hooks) section below (recommended), it will configure prettier rules on pre-commit's git events according to the `<GIT_DIRECTORY>/.prettierrc.json`.
+A `<GIT_DIRECTORY>/.prettierrc.json` exist to make the code more clean
 
 - ESlint
 
 This plugin is used to help you to develop and add rules to stylesheet your coding style.
 
-<a name='git-hooks'></a>
-
 - Git hooks
 
-Run the .bat script in `<GIT_DIRECTORY>/.git-hooks` to instanciate the git hooks configuration on your project.
+I run the .bat script in `<GIT_DIRECTORY>/.git-hooks` to instanciate the git hooks configuration on the project.
 
-Configuration Windows or Linux (use powershell or bash)
-Recommendation use VSCode bash = default configuration
+The commit-msg git hook is to force the developpers to write properly their commit message.
+
+The pre-commit git hook exist to prettify the code before the commit. The used rules are in `<GIT_DIRECTORY>/.prettierrc.json`.
 
 # Installation
 

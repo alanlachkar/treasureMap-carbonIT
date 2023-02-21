@@ -1,10 +1,10 @@
 // React imports
 import { createRoot } from 'react-dom/client';
 // Component imports
-import { PostPage } from './pages/PostPage/PostPage';
+import MapPage from './pages/MapPage/MapPage';
 
 const App = (): JSX.Element => {
-  return <PostPage />;
+  return <MapPage />;
 };
 
 const root = createRoot(document.getElementById('app') as HTMLElement);
