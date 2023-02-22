@@ -54,7 +54,7 @@ const Row = (props: RowProperties) => {
  * @returns Cell React component
  */
 const Cell = () => {
-  return <td className={styles.td}></td>;
+  return <td className={styles.td} data-testid="cell"></td>;
 };
 
 /**
