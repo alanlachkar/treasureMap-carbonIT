@@ -3,7 +3,7 @@ name: Dependabot auto-merge
 on:
   # https://github.com/actions/labeler/issues/121#issuecomment-1036490254
   pull_request:
-    branches: ['dev']
+    branches: ['develop']
 
 permissions:
   contents: write
